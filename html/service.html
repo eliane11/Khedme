@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plumbing Services - Khedme</title>
+    <link rel="stylesheet" href="/css/service.css">
+</head>
+<body>
+
+    <!-- Navigation with Logo -->
+    <nav>
+        <a href="index.html">
+            <img src="/Photos/Logo1.png" class="logo" alt="Logo">
+        </a>
+    </nav>
+
+    <header class="service-header">
+        <h1>SERVICE</h1>
+    </header>
+
+    <section class="filter-section">
+        <div class="filter">
+            <label for="location">Location:</label>
+            <select id="location" class="filter-dropdown">
+                <option value="all">location</option>
+                <option value="beirut">Beirut</option>
+                <option value="tripoli">Tripoli</option>
+                <option value="sidon">Sidon</option>
+                <!-- Add more locations as needed -->
+            </select>
+        </div>
+        <div class="filter">
+            <label for="gender">Gender:</label>
+            <select id="gender" class="filter-dropdown">
+                <option value="all">Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+    </section>
+    
+    <section class="service-cards" id="service-cards">
+        <div class="card" data-location="beirut" data-gender="female">
+            <!-- Profile Picture Upload -->
+            <div class="profile-picture-wrapper">
+                <div class="profile-picture" id="profileDisplay">
+                    <img src="" alt="Profile Picture Preview" id="profilePreview">
+                </div>
+                <input type="file" id="profile-picture" name="profile-picture" accept="image/png" class="profile-input" onchange="previewImage()">
+            </div>
+            <h3>Latifa</h3>
+            <p>Cleaner</p>
+            <p>20 $/H</p>
+            <p>★★★★☆</p>
+            <button class="cta-button">SE3DNE</button>
+        </div>
+        
+        <div class="card" data-location="tripoli" data-gender="male">
+          <!-- Profile Picture Upload -->
+          <div class="profile-picture-wrapper">
+            <div class="profile-picture" id="profileDisplay">
+                <img src="" alt="Profile Picture Preview" id="profilePreview">
+            </div>
+            <input type="file" id="profile-picture" name="profile-picture" accept="image/png" class="profile-input" onchange="previewImage()">
+        </div>
+            <h3>Kawssar</h3>
+            <p>Cleaner</p>
+            <p>15 $/H</p>
+            <p>★★★★☆</p>
+            <button class="cta-button">SE3DNE</button>
+        </div>
+        
+        <div class="card" data-location="sidon" data-gender="female">
+            <!-- Profile Picture Upload -->
+            <div class="profile-picture-wrapper">
+                <div class="profile-picture" id="profileDisplay">
+                    <img src="" alt="Profile Picture Preview" id="profilePreview">
+                </div>
+                <input type="file" id="profile-picture" name="profile-picture" accept="image/png" class="profile-input" onchange="previewImage()">
+            </div>
+            <h3>Rakelle</h3>
+            <p>Cleaner</p>
+            <p>25 $/H</p>
+            <p>★★★★★</p>
+            <button class="cta-button">SE3DNE</button>
+        </div>
+    </section>
+    
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Khedme | All rights reserved</p>
+      
+    </footer>
+    
+</body>
+</html>
